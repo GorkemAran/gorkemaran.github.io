@@ -5,41 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutlu yıllar Açelya </title>
     <style>
+
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #650098ed;
+            background: linear-gradient(246deg,#301eef,purple);
+            background-size: 360% 360%;
+
             margin: 0;
             padding: 0;
+            animation: gradient-animation 5s ease infinite;
+
         }
+        @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+        .container {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        } 
+        
         header {
-            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
-        h1 {
-            margin: 0;
-        }
 
-        img{
-            
-            text-align: center;
-        }
-
-        .image-section{
+        .images{    
             display: flex;
-        }
-        .image-section img {
-            width: 22%;
-            height: auto;
-        }
-        .video-section {
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        } 
+
+        .images-two{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            
+        } 
+
+        .text {
+            font-size: 28px;
             text-align: center;
-            margin-bottom: 20px;
         }
-        .text-section {
-            text-align: left;
-        }
+
+        video,
+        img {
+           width: 400px;
+           height: 600px;
+           object-fit: cover;
+           border-radius: 12px;
+           box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+
+        } 
+        
+       
     </style>
 </head>
 <body>
@@ -49,89 +82,113 @@
     <div class="container">
         <h2>Memorable Images</h2>
 
-        <audio controls autoplay src="Yüzyüzeyken Konuşuruz - Gençliğimi Geri Ver.mp3">
+        <audio autoplay src="/furk/love-music-2013.mp3">
           </audio>
 
+          <!-- <div class="images-container"> -->
+            <div class="images">  
+           
+                <div class="images-two">
+                    <img src="/furk/media1.jpg" />
+                    <img src="/furk/media3.jpg" >
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media2.jpeg" >
+                    <img src="/furk/media4.jpg" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
 
-        <div class="image-section">            
-            <img src="9dd53725-49bb-449c-be63-172f69ec0dd9.jpg" style="margin: 20px 600px 20px 200px;">
-            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="925fb2df-8365-4f1a-870b-e2d9a2f7e899.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="6e724299-658e-4358-a77c-09eed7033793.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="0ce4bab2-3ec8-47eb-9bd6-278a8f1b2600.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="2a36b1a3-c15d-4aa8-bf49-10008a222e00.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="dc2be0d8-607f-4971-8b85-9aa225a77e76.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="2c1c0471-6993-4be7-9303-d4268df2f995.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="d647c596-a47a-4afc-abdf-505b45c3a5f1.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="91b72533-2eb0-4adb-a0a9-755985c30ecc.jpg" style="margin: 20px 510px 20px 105px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div>
-            <video width="500" height="500" controls="controls">
-                <source src="VID_20210703_094756_460.mp4" type="video/mp4" >
-            </video>
-            <video width="500" height="500" controls="controls">
-                <source src="WhatsApp Video 2023-10-04 at 22.42.39 (1).mp4" type="video/mp4" >
-            </video>
-        </div>
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media5.jpg" >
+                    <img src="/furk/media7.jpg" >
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media6.jpg" >
+                    <img src="/furk/media8.jpg" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media9.jpg" >
+                    <video controls preload="metadata" src="/furk/media10.mp4" >
+
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media11.jpg" style="object-position: 43%;">
+                    <video controls preload="metadata" src="/furk/media12.mp4" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media17.jpg" style="object-position: top;"/>
+                    <img src="/furk/media19.jpg" style="object-position: 65%;">
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media18.jpeg" >
+                    <img src="/furk/media20.jpg" style="object-position: 67%;" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media21.jpg" style="object-position: top;"/>
+                    <video controls preload="metadata" src="/furk/media23.mp4">
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media22.jpg" >
+                    <video controls preload="metadata" src="/furk/media24.mp4" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media25.jpeg">
+                    <img src="/furk/media27.jpg">
+                </div>   
+               <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
+               </div> 
+                <div class="images-two">
+                    <img src="/furk/media26.jpg" >
+                    <img src="/furk/media28.jpg" >
+                    
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
             
-        <div class="image-section">            
-            <img src="6aee423b-0b36-4023-ae6b-ede95f6dc223.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="1e4d6270-d790-4383-95a5-fc5abbd44083.jpg" style="margin: 20px 510px 20px 105px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="51433959-f416-4da0-a0a3-7d492b0b73f2.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="f3c96bda-d6bc-414a-ac45-ae179205812b.jpg" style="margin: 20px 510px 20px 105px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="2dae684a-8496-49b3-a5c1-b4a73d0ff6d7.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="WhatsApp Image 2023-10-04 at 20.11.05 (1).jpeg" style="margin: 20px 510px 20px 105px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="c6827d63-0636-41d3-a9b4-e052e4fd4b01.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="af6aff68-c9e4-42ee-904d-ca14c52f9344.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">            
-            <img src="be0af21e-9b40-4a84-9019-9523f36d4f04.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="276f97c3-7389-4ee4-a1c5-077a7377abcf.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div>
-            <video width="500" height="500" controls="controls">
-                <source src="WhatsApp Video 2023-10-04 at 22.42.39.mp4" type="video/mp4" >
-            </video>
-            <video width="500" height="500" controls="controls">
-                <source src="WhatsApp Video 2023-10-04 at 20.11.12.mp4" type="video/mp4" >
-            </video>
-        </div>
 
+           
+            <!-- <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
+            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
+            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
+            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
+            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" > -->
 
-        <div class="image-section">
-            <img src="WhatsApp Image 2023-10-04 at 20.11.05.jpeg" style="margin: 20px 510px 20px 105px;">
-            <img src="6a9bdf5d-1fb8-4a90-9e1e-56a41045f0a9.jpg" style="margin: 20px 510px 20px 105px;">
-            <!-- Add more images as needed -->
-        </div>
-        <div class="image-section">
-            <img src="594cdfd4-4f02-4b7c-a4f0-635cb0d06443.jpg" style="margin: 20px 510px 20px 105px;">
-            <img src="bff0d8e0-ca40-41d5-a9e5-cd6ba331a293.jpg" style="margin: 20px 20px 20px 20px;">
-            <!-- Add more images as needed -->
-        </div>
+          <!-- </div> -->
+       
         <div class="text-section">
             <h2>Heartfelt Messages</h2>
             <p>Dear acelya,</p>
