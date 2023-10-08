@@ -8,7 +8,7 @@
 
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: cursive;
             background: linear-gradient(246deg,#301eef,purple);
             background-size: 360% 360%;
 
@@ -35,6 +35,8 @@
             display: flex;
             flex-direction: column;
             gap: 5rem;
+            font-weight: 600;
+            color: #fff;
         } 
         
         header {
@@ -54,109 +56,120 @@
             display: flex;
             flex-direction: column;
             gap: 3rem;
+            width: 35%;
             
         } 
 
         .text {
             font-size: 28px;
             text-align: center;
+            width: 30%;
+        }
+
+        .text2 {
+            width: 24% !important;
+    font-size: 55px;
+    line-height: 135px;
         }
 
         video,
         img {
-           width: 400px;
-           height: 600px;
+           width: 100%;
+           /* height: 600px; */
            object-fit: contain;
            border-radius: 12px;
 
         } 
+
+        h1 {
+            font-size: 40px;
+        }
         
        
     </style>
 </head>
 <body>
-    <header>
-        <h1>Mutlu Yıllar Açelya</h1>
-    </header>
+   
     <div class="container">
-        <h2>Memorable Images</h2>
 
-        <audio autoplay src="/furk/love-music-2013.mp3">
-          </audio>
+        <div style="text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 2rem; align-items: center; margin-top: 5rem;">
+            <div>
+                <audio controls src="/furk/love-music-2013.mp3">
+                </audio>
+            </div>
+
+
+           <div>
+            <h1>Play butonuna basmadan önce her fotoğrafın anısını hatırlaman ve tebessümle gezmen temennisiyle...</h1>
+
+           </div>
+           <div>
+            <h1>Press click play button Bezmenler...</h1>
+
+        </div>
+
+        </div>
+       
 
           <!-- <div class="images-container"> -->
             <div class="images">  
            
                 <div class="images-two">
-                    <img src="/furk/media1.jpg" />
-                    <img src="/furk/media3.jpg" >
-                </div>   
-               <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
-                <div class="images-two">
+                    <img src="/furk/media1.jpg" />  
                     <img src="/furk/media2.jpeg" >
-                    <img src="/furk/media4.jpg" >
+                </div>  
+                <div class="text">
+                    Sergimize dünya üzerindeki en epik fotoğraflarla başlamak istedim Açubekir kucağında çok mutlu bir Hocazade, onun hemen akabinde memnuniyetsiz bir Bezmen...                   </div> 
+                <div class="images-two">
+                    <img src="/furk/media22.jpg" >
                 </div>       
                 <!-- Add more images as needed -->
             </div>
 
-            <div class="images">    
+
+            <div class="images">  
+           
                 <div class="images-two">
-                    <img src="/furk/media5.jpg" >
-                    <img src="/furk/media7.jpg" >
-                </div>   
-               <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
+                    <img src="/furk/media3.jpg" />   
+                    <img src="/furk/media5.jpg" />   
+                    <img src="/furk/media7.jpg" />   
+                </div>  
+                <div class="text text2">
+                    Bizim neden az fotoğrafımız var hadi gel çekinelim günü...               
+                    </div> 
                 <div class="images-two">
+                    <img src="/furk/media4.jpg" >
                     <img src="/furk/media6.jpg" >
                     <img src="/furk/media8.jpg" >
                 </div>       
                 <!-- Add more images as needed -->
             </div>
+            
 
             <div class="images">    
                 <div class="images-two">
                     <img src="/furk/media9.jpg" >
-                    <video controls preload="metadata" src="/furk/media10.mp4" >
 
                 </div>   
                <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
+                Forum Sinema dönüşü eşşek gibi bekleyeceksin kavgası gecesi..               </div> 
                 <div class="images-two">
                     <img src="/furk/media11.jpg" style="object-position: 43%;">
-                    <video controls preload="metadata" src="/furk/media12.mp4" >
                 </div>       
                 <!-- Add more images as needed -->
             </div>
 
+            
             <div class="images">    
                 <div class="images-two">
-                    <img src="/furk/media17.jpg" style="object-position: top;"/>
-                    <img src="/furk/media19.jpg" style="object-position: 65%;">
-                </div>   
-               <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
-                <div class="images-two">
-                    <img src="/furk/media18.jpeg" >
-                    <img src="/furk/media20.jpg" style="object-position: 67%;" >
-                </div>       
-                <!-- Add more images as needed -->
-            </div>
+                    <video controls="controls autoplay">
+                        <source src="/furk/_uploads_6522882a7aa088.72028913_fixed.mp4_preview.mov" type="video/mp4" />
+                      </video>
 
-            <div class="images">    
-                <div class="images-two">
-                    <img src="/furk/media21.jpg" style="object-position: top;"/>
-                    <video controls preload="metadata" src="/furk/media23.mp4">
                 </div>   
                <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
+                İhbar ve utanmıyor musun....               </div> 
                 <div class="images-two">
-                    <img src="/furk/media22.jpg" >
                     <video controls preload="metadata" src="/furk/media24.mp4" >
                 </div>       
                 <!-- Add more images as needed -->
@@ -164,35 +177,110 @@
 
             <div class="images">    
                 <div class="images-two">
+                    <img src="/furk/media17.jpg" style="object-position: top;"/>
+                </div>   
+               <div class="text">
+                İlk gratis dönüşü meydanda ben kuş sevmem fotisi...               </div> 
+                <div class="images-two">
+                    <img src="/furk/media18.jpeg" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media15.jpg">
+                    <img src="/furk/media16.jpg">
+                </div>   
+               <div class="text">
+                Oğlum kedi cennetinde uyuyor yakın zamanda oğlum ŞANS'ıyla tanışmış...
+                Kucak memnuniyeti...               </div> 
+                <div class="images-two">
+                    <video controls preload="metadata" src="/furk/media23.mp4" >
+                    
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media19.jpg" style="object-position: 65%;">
+                </div>   
+               <div class="text">
+                Çirkin ol konulu Açubekir ve Beyza'nın yüzünü kapatması ironisi şakayısı..           </div> 
+                <div class="images-two">
+                    <img src="/furk/media21.jpg" style="object-position: 67%;" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media20.jpg" >
+
+                </div>   
+               <div class="text">
+                Boxer koklatma yılbaşısı sonrası Beyza'nın notlarındaki artış....               </div> 
+                <div class="images-two">
+                    <video controls preload="metadata" src="/furk/media12.mp4" >
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
                     <img src="/furk/media25.jpeg">
+                </div>   
+               <div class="text">
+                Baturay gösterisi ve menejeri öpme günü...               </div> 
+                <div class="images-two">
+                    <img src="/furk/media26.jpg" >
+                    
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
+
+            <div class="images">    
+                <div class="images-two">
                     <img src="/furk/media27.jpg">
                 </div>   
                <div class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda rerum, porro quis hic iusto sed cumque nihil. Praesentium facilis impedit ea reiciendis deserunt ut, aperiam obcaecati, debitis doloribus accusamus dolorem.
-               </div> 
+                Nice Avrupa'lı şımarık çocukları tokatlarken vereceğimiz bu en güzel pozlarımıza...               </div> 
                 <div class="images-two">
-                    <img src="/furk/media26.jpg" >
                     <img src="/furk/media28.jpg" >
                     
                 </div>       
                 <!-- Add more images as needed -->
             </div>
+
             
+            <div class="images">    
+                <div class="images-two">
+                    <img src="/furk/media13.jpg">
+                </div>   
+               <div class="text">
+                Vapur Gezisi Hayalleri, dönüşte ilk cakebeen keşfi...               </div> 
+                <div class="images-two">
+                    <img src="/furk/media14.jpg" >
+                    
+                </div>       
+                <!-- Add more images as needed -->
+            </div>
 
-           
-            <!-- <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
-            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
-            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
-            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" >
-            <img src="WhatsApp Image 2023-10-04 at 20.11.06.jpeg" > -->
+            <div style="width: 50%; margin: 0 auto; display: flex; flex-direction: column; gap: 3rem; text-align: center;">
+                    <div style="text-align: center; font-size: 2rem;">Ve en can alıcı, öğretici kısım....
+                        Karadenizli bir aslan kükrüyor ve dünya 17 sn liğine güzelleşiyor....</div>
+                <video controls src="/furk/horlama.mp4">
 
-          <!-- </div> -->
+            </div>
+            
        
-        <div class="text-section">
-            <h2>Heartfelt Messages</h2>
-            <p>Dear acelya,</p>
-            <p>On this special day, we want to express our love and warmest wishes for you. You are truly one of a kind, and we cherish all the beautiful moments we've shared together.</p>
-            <!-- Add more text content as needed -->
+        <div style="text-align: center;">
+            <h1>
+                Sitenin ismini bir ömür yaşatma dileğiyle
+İyi ki varsın HERŞEY, gönlünce olsun.
+            </h1>
+            <h1>Beraber nice mutlu senelerimize :)</h1>
         </div>
     </div>
 </body>
